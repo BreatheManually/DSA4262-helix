@@ -102,7 +102,6 @@ DSA4246-HELIX/
 ├── model_user.py
 ├── README.md
 ├── data
-│   └── full_data.csv
 │   └── test_data.csv
 ├── savedModels/
 │   └── rfc
