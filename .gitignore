@@ -1,0 +1,5 @@
+venv/
+data/data*
+test.ipynb
+__pycache__
+data/full_data.csv
