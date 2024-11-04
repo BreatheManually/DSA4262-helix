@@ -15,23 +15,28 @@ RNA modifications  play a critical role in many biological processes such as reg
 
 2. Ensure python is installed.
     ```bash
-    python --version
+    python3 --version
     ```
     If not installed, install python.
     
     ```bash
     sudo apt update
-    sudo apt install python python-pip -y
+    sudo apt install python3 python3-pip -y
     ```
 
 3. Navigate to chosen directory and clone the repository:
 
     ```bash
     git clone https://github.com/BreatheManually/DSA4262-helix.git
-    cd DSA4246-helix
+    cd DSA4246-helix/
     ```
 
-4. Install Python dependencies in a virtual environment:
+4. Install venv if not installed:
+    ```bash
+    sudo apt install python3-venv
+    ```
+
+5. Install Python dependencies in a virtual environment:
 
     For MacOS/Linux:
     ```bash
@@ -90,7 +95,11 @@ Details:
 
 Example command for predicting with our model with sample data:
 
-    python app.py --data_path "data/test_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions.csv"
+    python app.py --data_path "data/test_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions"
+
+    cat predictions.csv
+
+test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
 
 ## File Structure
 

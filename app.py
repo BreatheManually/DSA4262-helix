@@ -32,6 +32,7 @@ def main():
             
         #Adds .csv to the output
         df.to_csv(args.output + ".csv")
+        print("Done!")
         return None
     
     #For predict or train, load model and pull csv file.
@@ -54,6 +55,7 @@ def main():
         
         #Adds .csv to the output.
         pd.DataFrame(modelUser.predict(data_df)).to_csv(args.output + ".csv")
+        print("Done!")
         return None
     
     #Train data
@@ -67,6 +69,7 @@ def main():
         modelUser.train_test_model(data_df)
         print("Outputing Model...")
         modelUser.output_model(args.output)
+        print("Done!")
         return None
          
     
