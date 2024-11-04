@@ -31,7 +31,7 @@ def main():
             df = parser.full_parse()
             
         #Adds .csv to the output
-        df.to_csv(args.output + ".csv")
+        df.to_csv(args.output + ".csv", index=False)
         print("Done!")
         return None
     

@@ -101,7 +101,7 @@ Example command for predicting with our model with sample data:
 
 Example command for training our model with data set 0:
 
-    python app.py --data_path "data/data.csv" --model_path "savedModels/rfc" --function "training" --output "savedModels/rfc2"
+    python app.py --data_path "data/data.csv" --model_path "savedModels/rfc" --function "train" --output "savedModels/rfc2"
 
 test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
 
