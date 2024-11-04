@@ -45,7 +45,7 @@ class ModelUser:
             Output:
             None
         """
-        dump(self.model, model_path)
+        dump(self.model, model_path, compress=3)
     
     def split_data(self, data):
         train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)

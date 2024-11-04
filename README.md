@@ -88,7 +88,7 @@ Details:
 -   Parsing with label_path gives training data (csv) with labels for training.
 -   Train uses model with same parameters but 'resets' training, so it is only trained on dataset given.
 
-Example command:
+Example command for predicting with our model with sample data:
 
     python app.py --data_path "data/test_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions.csv"
 
