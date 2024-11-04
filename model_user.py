@@ -94,7 +94,7 @@ class ModelUser:
         plt.show()
         desired_tpr = 0.8
         closest_index = np.argmin(np.abs(tpr - desired_tpr))
-        print("Optimal Threshold: " + thresholds[closest_index])
+        print(f"Optimal Threshold: {thresholds[closest_index]}")
     
     def get_pr_curve(self, test_labels, y_probs):
         # For Precision Recall Curve
