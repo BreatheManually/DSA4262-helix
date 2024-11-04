@@ -118,7 +118,6 @@ Details:
 
     python app.py --data_path "data/test_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions"
 
-    cat predictions.csv
 
 test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
 

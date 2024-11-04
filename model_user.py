@@ -38,7 +38,7 @@ class ModelUser:
             Prediction using model.
         """
         no_labels_data.drop(columns=['transcript_id', 'transcript_position', 'first5', 'second5', 'third5'], inplace = True)
-        return self.model.predict(no_labels_data)
+        return self.model.predict_proba(no_labels_data)
     
     def output_model(self, model_path = "savedModels/default"):
         """
