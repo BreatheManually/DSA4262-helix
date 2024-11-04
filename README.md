@@ -1,4 +1,4 @@
-# DSA4213 Team Helix: m6A Modification Detection
+# DSA4262 Team Helix: m6A Modification Detection
 
 <h2 align="center"> 
   <img src="https://cbx-prod.b-cdn.net/COLOURBOX65073341.jpg?width=800&height=800&quality=70" alt="drawing" width="200"/>
