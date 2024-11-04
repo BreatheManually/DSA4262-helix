@@ -30,7 +30,7 @@ RNA modifications  play a critical role in many biological processes such as reg
     sudo apt install python3 python3-pip -y
     ```
 
-3. Navigate to chosen directory and clone the repository:
+3. Navigate to any directory of your choice and clone the repository:
 
     ```bash
     git clone https://github.com/BreatheManually/DSA4262-helix.git
@@ -42,7 +42,7 @@ RNA modifications  play a critical role in many biological processes such as reg
     sudo apt install python3-venv
     ```
 
-5. Install Python dependencies in a virtual environment:
+5. Activate venv and install Python dependencies in a virtual environment:
 
     For MacOS/Linux:
     ```bash
@@ -58,7 +58,14 @@ RNA modifications  play a critical role in many biological processes such as reg
     pip install -r requirements.txt
     ```
 ## User Guide
-Use app.py to access commands, flags are as follows:
+
+Command app.py, to use:
+
+  ```bash 
+  python app.py --[insert flag] "[insert parameter]" --[insert flag2] "[insert parameter2]"
+  ```
+
+Flags are as follows:
 
     --data_path
 
@@ -68,6 +75,8 @@ Description: Specifies the file location of the data CSV file.
 
 Usage: Provides the path to data file, should be correct type [labeled data, unlabeled data, raw data] depending on the chosen function.
 
+ ------------------
+
     --label_path
 
 Default: None
@@ -76,6 +85,8 @@ Description: Specifies the file location of the data labels. Does not have a def
 
 Usage: **ONLY REQUIRED FOR PARSE FUNCTION.** Provide the path to your labels file, which should align with your data.
 
+------------------
+
     --model_path
 
 Default: "savedModels/rfc"
@@ -83,6 +94,8 @@ Default: "savedModels/rfc"
 Description: Specifies the file location of the model file, which should be a .joblib file.
 
 Usage: If your model file is saved elsewhere, please provide the full path.
+
+------------------
 
     --function
 
@@ -99,7 +112,9 @@ Details:
 -   Parsing with label_path gives training data (csv) with labels for training.
 -   Train uses model with same parameters but 'resets' training, so it is only trained on dataset given.
 
-Example command for predicting with our model with sample data:
+------------------
+
+### Example command for predicting with our model with sample data:
 
     python app.py --data_path "data/test_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions"
 
@@ -107,7 +122,7 @@ Example command for predicting with our model with sample data:
 
 test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
 
-Example command for training our model with data set 0:
+### Example command for training our model with data set 0:
 
     python app.py --data_path "data/train_data.csv" --model_path "savedModels/rfc" --function "train" --output "savedModels/rfc2"
 

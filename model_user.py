@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from joblib import dump
 import pandas as pd
 import os
+import numpy as np
 
 class ModelUser:
     def __init__(self, model):
@@ -91,6 +92,9 @@ class ModelUser:
         plt.title('Receiver Operating Characteristic (ROC) Curve')
         plt.legend(loc="lower right")
         plt.show()
+        desired_tpr = 0.8
+        closest_index = np.argmin(np.abs(tpr - desired_tpr))
+        print("Optimal Threshold: " + thresholds[closest_index])
     
     def get_pr_curve(self, test_labels, y_probs):
         # For Precision Recall Curve
