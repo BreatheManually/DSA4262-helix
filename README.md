@@ -82,7 +82,7 @@ Default: "savedModels/rfc"
 
 Description: Specifies the file location of the model file, which should be a .joblib file.
 
-Usage: If your model file is saved elsewhere, provide the full path.
+Usage: If your model file is saved elsewhere, please provide the full path.
 
     --function
 
@@ -105,11 +105,12 @@ Example command for predicting with our model with sample data:
 
     cat predictions.csv
 
+test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
+
 Example command for training our model with data set 0:
 
-    python app.py --data_path "data/data.csv" --model_path "savedModels/rfc" --function "train" --output "savedModels/rfc2"
+    python app.py --data_path "data/train_data.csv" --model_path "savedModels/rfc" --function "train" --output "savedModels/rfc2"
 
-test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
 
 ## File Structure
 
