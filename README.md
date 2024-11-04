@@ -60,7 +60,7 @@ Default: "data/test_data.csv"
 
 Description: Specifies the file location of the data CSV file.
 
-Usage: Provides the path to data file, if flag not stated, test_data.csv (For Predictions) is used.
+Usage: Provides the path to data file, should be correct type [labeled data, unlabeled data, raw data] depending on the chosen function.
 
     --label_path
 
@@ -68,7 +68,7 @@ Default: None
 
 Description: Specifies the file location of the data labels. Does not have a default value, only need for train function.
 
-Usage: Provide the path to your labels file, which should align with your data.
+Usage: **ONLY REQUIRED FOR PARSE FUNCTION.** Provide the path to your labels file, which should align with your data.
 
     --model_path
 
@@ -98,6 +98,10 @@ Example command for predicting with our model with sample data:
     python app.py --data_path "data/test_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions"
 
     cat predictions.csv
+
+Example command for training our model with data set 0:
+
+    python app.py --data_path "data/data.csv" --model_path "savedModels/rfc" --function "training" --output "savedModels/rfc2"
 
 test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
 

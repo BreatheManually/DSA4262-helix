@@ -1,5 +1,5 @@
 venv/
-data/data*
+data/dataset0.json.gz
 test.ipynb
 __pycache__
 data/full_data.csv
