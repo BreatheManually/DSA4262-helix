@@ -13,6 +13,12 @@ RNA modifications  play a critical role in many biological processes such as reg
 ## Getting Started (In EC2 Ubuntu Environment)
 1. Connect to EC2 ubuntu instance.
 
+    Recommended:
+
+    InstanceType: t3.medium
+
+    RAM: 10GB
+
 2. Ensure python is installed.
     ```bash
     python3 --version
