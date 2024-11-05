@@ -92,7 +92,7 @@ RNA modifications  play a critical role in many biological processes such as reg
     ```
 3. Look at predicted output:
     ```bash 
-    cat predections.csv
+    cat predictions.csv
     ```
   
 ## User Guide
