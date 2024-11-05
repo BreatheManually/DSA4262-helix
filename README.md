@@ -186,6 +186,10 @@ DSA4246-HELIX/
 
 - **SKLearn**: scikit-learn is a free and open-source machine learning library for the Python programming language. 
 
+- **NumPy**: NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+
+- **Matplotlib**: Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.  
+
 
 ## Contributors 
 <div>
