@@ -1,5 +1,5 @@
 """
-Module parses json or zipped json data into df. 
+Module parses json or zipped json m6a data into panda dataframe. 
 """
 
 import gzip

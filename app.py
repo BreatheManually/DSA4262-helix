@@ -10,7 +10,7 @@ from joblib import load
 import os
 
 def main():
-    parser = argparse.ArgumentParser(description="For help in commands, refer to README.")
+    parser = argparse.ArgumentParser(description="For help in commands, refer to README in repository.")
     
     parser.add_argument('--data_path', type=str, default="data/test_data.csv", help='File location of data, csv file.')
     parser.add_argument('--label_path', type=str, help='File location of data labels')
