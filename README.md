@@ -5,7 +5,17 @@
   <br>
   <center>Detecting m6A modifications in direct RNA sequencing data</center>
 </h2>
-
+<summary>Table of Contents</summary>
+    <ol>
+        <li><a href="#project-description">Project Description</a></li>
+        <li><a href="#getting-started-in-ec2-ubuntu-environment">Getting Started (In EC2 Ubuntu Environment)</a></li>
+        <li><a href="quick-start-get-prediction-output">Quick Start (Get Prediction Ouput)</a></li>
+        <li><a href="#user-guide">User Guide</a></li>
+        <li><a href="#file-structure">File Structure</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#contributors">Contributors </a></li>
+        <li><a href="#license">License</a></li>
+    </ol>
    
 ## Project Description
 RNA modifications  play a critical role in many biological processes such as regulating gene expression, facilitating immune response and cellular differentiation. The N6-methyladenosine (m6A) modifcation, which involves the addition of a methyl group to a Adenosine(A) base, is the most prevalent modifcation in eukaryotic mRNA. It has been associated with various psychological conditions and pathologies, including cancer. Hence, identifiying m6A sites within RNA is crucial for understanding its regulatory roles in diseases, which can ultimately help in the development of targeted treatments that can more effectively address these conditions.
@@ -235,3 +245,9 @@ DSA4246-HELIX/
     </td>
   </tr>
 </table> 
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/BreatheManually/DSA4262-helix?tab=MIT-1-ov-file) tab for more details.
+
+[def]: quick-star
