@@ -17,7 +17,7 @@ RNA modifications  play a critical role in many biological processes such as reg
 
     InstanceType: t3.medium
 
-    RAM: 10GB
+    EBS Volume Size: 100GB
 
 2. Ensure python is installed.
     ```bash
@@ -34,6 +34,8 @@ RNA modifications  play a critical role in many biological processes such as reg
 
     ```bash
     git clone https://github.com/BreatheManually/DSA4262-helix.git
+
+    # Navigate to the cloned directory
     cd DSA4246-helix/
     ```
 
@@ -48,6 +50,8 @@ RNA modifications  play a critical role in many biological processes such as reg
     ```bash
     python3 -m venv venv
     source venv/bin/activate
+
+    # Install packages
     pip install -r requirements.txt
     ```
 
@@ -55,6 +59,8 @@ RNA modifications  play a critical role in many biological processes such as reg
     ```bash
     python3 -m venv venv
     venv/Scripts/activate
+
+    # Install packages
     pip install -r requirements.txt
     ```
 ## User Guide
@@ -115,7 +121,7 @@ Details:
 ------------------
 
 ### Example command for parsing sample data:
-    python app.py --data_path "data/A549_500.json"  --function "parse" --output "data/prediction_data.csv"
+    python app.py --data_path "data/A549_500.json"  --function "parse" --output "data/prediction_data"
 
 Note: A549_500 is the collection of data for the first 500 transcript & position in the SGNex_A549_directRNA_replicate5_run1 file.
 
@@ -139,8 +145,11 @@ DSA4246-HELIX/
 ├── data_parser.py
 ├── model_user.py
 ├── README.md
+├── Model Experimentation
+│   └── DSA4262_Intermediate_leaderboard_code.ipynb
 ├── data
-│   └── test_data.csv
+│   └── A549_500.json
+│   └── train_data.csv
 ├── savedModels/
 │   └── rfc
 ├── .gitignore

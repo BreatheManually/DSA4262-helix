@@ -1,3 +1,6 @@
+"""
+Module facilitates use of sklearn models, allows traning, prediction, output of model and model exporting for m6a datasets.
+"""
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.metrics import roc_curve, auc, precision_recall_curve

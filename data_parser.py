@@ -1,3 +1,7 @@
+"""
+Module parses json or zipped json data into df. 
+"""
+
 import gzip
 import json
 import pandas as pd
@@ -14,16 +18,25 @@ class DataParser:
     
     
     def full_parse(self):
+        """
+        Parses data, combines labeled data and unlabeled data.
+        """
         dictionary = eval(str(self.pull_data_into_dict()))
         df = self.data_to_df(dictionary)
         return df
 
     def parse_without_labels(self):
+        """
+        Parses unlabeled data.
+        """
         dictionary = eval(str(self.pull_data_into_dict()))
         df = self.data_to_df_no_labels(dictionary)
         return df
     
     def data_to_df(self, dictionary):
+        """
+        Convert data into a df with appropriate column names this includes labels.
+        """
         rows = []
         for key, value in dictionary.items():
             row = {
@@ -49,6 +62,9 @@ class DataParser:
         return pd.DataFrame(rows)
     
     def data_to_df_no_labels(self, dictionary):
+        """
+        Convert data into a df with appropriate column names this does not include labels.
+        """
         rows = []
         for key, value in dictionary.items():
             row = {
@@ -74,6 +90,9 @@ class DataParser:
     
     
     def pull_data_into_dict(self):
+        """
+        Convert data from json to a dictionary.
+        """
         
         listofjsondata = []
         # If file is gzipped

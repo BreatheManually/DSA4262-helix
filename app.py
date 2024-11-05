@@ -1,3 +1,7 @@
+"""
+Script to allow CLI to parse, train and prediction for m6a modifications.
+"""
+
 import argparse
 from data_parser import DataParser as DataParser
 from model_user import ModelUser as ModelUser
