@@ -85,7 +85,7 @@ class DataParser:
         
         # If file is json
         if self.path_to_data[-5:] == '.json':
-            with open('A549_500.json', 'r') as f:
+            with open(self.path_to_data, 'r') as f:
                 for line in f:
                     listofjsondata.append(line.strip())
         
