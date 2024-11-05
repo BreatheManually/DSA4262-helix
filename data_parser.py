@@ -74,10 +74,20 @@ class DataParser:
     
     
     def pull_data_into_dict(self):
-        with gzip.open(self.path_to_data, 'rb') as f:
-            file_content = f.read()
+        
+        listofjsondata = []
+        # If file is gzipped
+        if self.path_to_data[-8:] == '.json.gz':
+            with gzip.open(self.path_to_data, 'rb') as f:
+                file_content = f.read()
 
-        listofjsondata = file_content.splitlines()
+            listofjsondata = file_content.splitlines()
+        
+        # If file is json
+        if self.path_to_data[-5:] == '.json':
+            with open('A549_500.json', 'r') as f:
+                for line in f:
+                    listofjsondata.append(line.strip())
         
         if self.label_data != "":
             label_data = pd.read_csv(self.label_data)
