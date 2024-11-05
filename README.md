@@ -63,6 +63,28 @@ RNA modifications  play a critical role in many biological processes such as reg
     # Install packages
     pip install -r requirements.txt
     ```
+
+## Quick Start (Get Prediction Ouput)
+> [!TIP]
+>
+> **For student evaluators**
+>
+> If you are in a rush to evaluate and are unable to take the time to read and understand the entire README.
+>
+> You can run the in this section below to get the prediction results.
+1. Parse A549_500.json Data:
+    ```bash 
+    python app.py --data_path "data/A549_500.json"  --function "parse" --output "data/prediction_data"
+    ```
+2. Use parsed data to predict output:
+    ```bash 
+    python app.py --data_path "data/prediction_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions"
+    ```
+3. Look at predicted output:
+    ```bash 
+    cat predections.csv
+    ```
+  
 ## User Guide
 
 Command app.py, to use:
