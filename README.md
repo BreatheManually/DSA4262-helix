@@ -188,3 +188,15 @@ DSA4246-HELIX/
   <tr>
     <td>4</td>
     <td>Tay Wan Lin</td>
+    <td><a href="https://github.com/Wehnlynn" target="blank_">
+    GitHub</a>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Rayner Cheng</td>
+    <td><a href="https://github.com/ray1123001" target="blank_">
+    GitHub</a>
+    </td>
+  </tr>
+</table> 
