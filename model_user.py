@@ -92,9 +92,7 @@ class ModelUser:
         plt.title('Receiver Operating Characteristic (ROC) Curve')
         plt.legend(loc="lower right")
         plt.show()
-        desired_tpr = 0.8
-        closest_index = np.argmin(np.abs(tpr - desired_tpr))
-        print(f"Optimal Threshold: {thresholds[closest_index]}")
+        
     
     def get_pr_curve(self, test_labels, y_probs):
         # For Precision Recall Curve

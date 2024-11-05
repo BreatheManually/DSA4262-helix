@@ -114,17 +114,21 @@ Details:
 
 ------------------
 
+### Example command for parsing sample data:
+    python app.py --data_path "data/A549_500.json"  --function "parse" --output "data/prediction_data.csv"
+
+Note: A549_500 is the collection of data for the first 500 transcript & position in the SGNex_A549_directRNA_replicate5_run1 file.
+
 ### Example command for predicting with our model with sample data:
 
-    python app.py --data_path "data/test_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions"
+    python app.py --data_path "data/prediction_data.csv" --model_path "savedModels/rfc" --function "predict" --output "predictions"
 
-
-test_data is the first 5000 entries in SGNex_Hct116_directRNA_replicate3_run4.
 
 ### Example command for training our model with data set 0:
 
     python app.py --data_path "data/train_data.csv" --model_path "savedModels/rfc" --function "train" --output "savedModels/rfc2"
 
+Note: train_data.csv is dataset0 parsed.
 
 ## File Structure
 

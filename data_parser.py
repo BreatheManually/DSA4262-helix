@@ -93,7 +93,7 @@ class DataParser:
             i += 1
             transdict = json.loads(jsonitem)
             # This just helps to see how many is left.
-            if i % 1000 == 0:
+            if i % 5000 == 0:
                 print(str(i) + "/" + str(length))
             for transcript_id in transdict.keys():
                 for position_id in transdict[transcript_id].keys():

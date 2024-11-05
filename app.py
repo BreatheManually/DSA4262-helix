@@ -23,10 +23,19 @@ def main():
     
     #Using parse function
     if args.function == "parse":
+        print("Starting Parser...")
         if args.label_path is None:
+            
+            # Check if file is not json or gz file.
+            if not (args.data_path[-8:] == '.json.gz' or args.data_path[-5:] == '.json'):
+                print("Data file type is not .json or .json.gz")
+            
             parser = DataParser(args.data_path)
             df = parser.parse_without_labels()
         else:
+            if not (args.label_path[-14:] == '.info.labelled'):
+                print("Label data file type is not .info.labelled")
+                
             parser = DataParser(args.data_path, args.label_path)
             df = parser.full_parse()
             
