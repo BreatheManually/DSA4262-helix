@@ -40,8 +40,11 @@ class ModelUser:
             Output: 
             Prediction using model.
         """
+        results = no_labels_data[['transcript_id', 'transcript_position']].copy()
         no_labels_data.drop(columns=['transcript_id', 'transcript_position', 'first5', 'second5', 'third5'], inplace = True)
-        return self.model.predict_proba(no_labels_data)
+        predictions = self.model.predict_proba(no_labels_data)[:, 1]
+        results["score"] = predictions
+        return results
     
     def output_model(self, model_path = "savedModels/default"):
         """
